@@ -1,0 +1,9 @@
+[Unit]
+Description=send ping to 8.8.8.8 periodically
+
+[Service]
+Type=simple
+ExecStart=/etc/ping-monitor/ping_8.8.8.8.sh
+
+[Install]
+WantedBy=multi-user.target
